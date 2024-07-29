@@ -1,5 +1,5 @@
-matplotlib==3.8.4
-mlxtend==0.23.1
-numpy==1.20.3
-scikit_learn==1.4.2
-streamlit==1.36.0
+matplotlib
+mlxtend
+numpy
+scikit_learn
+streamlit
