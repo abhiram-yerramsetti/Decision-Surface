@@ -13,7 +13,7 @@ data = st.sidebar.selectbox('type of data ', ('classification','circles','blobs'
 
 if data == 'classification':
     X, y = make_classification(n_samples=100, n_features=2, n_informative=2, n_redundant=0, random_state=42)
-elif data == 'classification':
+elif data == 'circles':
     X, y = make_circles(n_samples=100, factor=0.5, noise=0.05)
     
 elif data == 'blobs':
