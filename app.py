@@ -9,12 +9,13 @@ from sklearn.linear_model import LogisticRegression
 from mlxtend.plotting import plot_decision_regions
 
 # Create a synthetic dataset
-data = st.sidebar.selectbox('type of data ', ('classification','circles','blobs', 'moons'))
+# 'circles',
+data = st.sidebar.selectbox('type of data ', ('classification','blobs', 'moons'))
 
 if data == 'classification':
     X, y = make_classification(n_samples=100, n_features=2, n_informative=2, n_redundant=0, random_state=42)
-elif data == 'circles':
-    X, y = make_circles(n_samples=100, factor=0.5, noise=0.05)
+# elif data == 'circles':
+#     X, y = make_circles(n_samples=100, factor=0.5, noise=0.05)
     
 elif data == 'blobs':
     X,y = make_blobs(n_samples=250, centers=2, n_features=2, cluster_std=1.0, random_state=42)
