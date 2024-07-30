@@ -10,7 +10,7 @@ from mlxtend.plotting import plot_decision_regions
 
 # Create a synthetic dataset
 
-st.sidebar.image(r"E:\innomatics\logo.png")
+st.sidebar.image("logo.png")
 data = st.sidebar.selectbox('Select Type of Data ', ('classification','blobs', 'moons','circles'))
 
 if data == 'classification':
