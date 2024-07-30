@@ -9,7 +9,8 @@ from sklearn.linear_model import LogisticRegression
 from mlxtend.plotting import plot_decision_regions
 
 # Create a synthetic dataset
-# 'circles',
+
+st.sidebar.image(r"E:\innomatics\logo.png")
 data = st.sidebar.selectbox('Select Type of Data ', ('classification','blobs', 'moons','circles'))
 
 if data == 'classification':
