@@ -21,7 +21,7 @@ elif data == 'blobs':
     X,y = make_blobs(n_samples=250, centers=2, n_features=2, cluster_std=1.0, random_state=42)
     
 elif data == 'moons':
-    X,y = make_moons(n_samples=250, centers=2, n_features=2, cluster_std=1.0, random_state=42)
+    X, y = make_moons(n_samples=100, noise=0.1, random_state=42)
     
 
 
