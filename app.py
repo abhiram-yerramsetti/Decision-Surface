@@ -10,7 +10,7 @@ from mlxtend.plotting import plot_decision_regions
 
 # Create a synthetic dataset
 # 'circles',
-data = st.sidebar.selectbox('type of data ', ('classification','blobs', 'moons','circles'))
+data = st.sidebar.selectbox('Select Type of Data ', ('classification','blobs', 'moons','circles'))
 
 if data == 'classification':
     X, y = make_classification(n_samples=100, n_features=2, n_informative=2, n_redundant=0, random_state=42)
